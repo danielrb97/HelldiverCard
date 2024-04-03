@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #0C2324;
+        }
+        section{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .card{
+            width: 850px;
+            height: 500px;
+            border-radius: 20px;
+            background-color: rgb(64, 64, 64);
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }
+        .card section{
+            margin: 0px;
+        }
+        .left-card{
+            display: grid;
+            grid-template-rows: repeat(2,1fr);
+            height: 850px;
+            width: 300px;
+        }
+        .diver-avatar{
+            width: 100%;
+            overflow: hidden;
+            height: 100%;
+            border-radius: 20px 0px 100px 100px;
+        }
+        .diver-level{
+            height: 18%;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            align-items: center;
+        }
+        .diver-level img{
+           width: 40px;
+           height: 40px;
+           margin-left: 15px;
+        }
+        .helldiver-data{
+            font-family: "Jura", sans-serif;
+            text-align: center;
+            box-shadow: 5px 0px #D63D00 inset;
+            
+        }
+        .helldiver-data p{
+            margin: 0px 0px 0px -50px; 
+        }
+        .helldiver-data h3{
+            margin: 0px 0px 0px -50px; 
+        }
+
+
+
+        .right-card{
+            height: 50%;
+            width: 100%;
+            display: grid;
+            grid-template-rows: 1fr 0fr 1fr 3fr;
+        }
+        .foto-portada{
+            width: 550px;
+            height: 60%;
+            
+        }
+        .foto-portada img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0px 20px 0px 0px;
+        }
+        .diver-photo{
+            position: relative;
+            height: 0px;
+            top:-200px;
+            left: 200px;
+        }
+        
+        .diver-photo img{
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            border: 3px solid rgb(64, 64, 64);
+        }
+        .helldiver-stadistics{
+            height: 18%;
+            width: 70%;
+            margin-left: 15%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            text-align: center;
+            font-family: "Jura", sans-serif;
+            
+        }
+        .helldiver-stadistics h4{
+            margin: 0px 0px 5px 0px;
+            font-weight: bold;
+        }
+        .helldiver-stadistics p{
+            margin: 0px 0px 5px 0px;
+            font-weight: lighter;
+        }
+        .terminids{
+            box-shadow: 2px 0px rgba(255, 255, 255, 0.801) inset;
+        }
+        .add-helldiver{
+            text-align: center;
+        }
+        .add-helldiver button{
+            height: 30px;
+            width: 300px;
+            background-color: #D63D00;
+            border: none;
+            border-radius: 25px;
+            font-family:"Jura", sans-serif;
+            font-weight: bolder;
+            font-size: 13px;
+        }
+        .add-helldiver footer{
+            font-family: "Jura", sans-serif;
+            letter-spacing: 10px;
+            font-size: 15px;
+            margin-top: 35px;
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="card">
+            <section class="left-card">
+                <div class="diver-avatar">
+                    <img src="/frontend-developer/img/helldiver2.png" alt="Diver avatar">
+                </div>
+                <div class="diver-level">
+                    <div class="helldiver-logo">
+                        <img src="/frontend-developer/img/LogoHelldiver.webp" alt="Diver logo">
+                    </div>
+                    <div class="helldiver-data">
+                        <h3>danielrb97</h3>
+                        <p>CHIEF</p>
+                        <p>Level 21</p>
+                    </div>
+                </div>
+            </section>
+            <section class="right-card">
+                <div class="foto-portada">
+                    <img src="/frontend-developer/img/helldivers-2-header.webp" alt="">
+                </div>
+                <div class="diver-photo">
+                    <img src="https://scontent.fagu4-1.fna.fbcdn.net/v/t39.30808-6/419879408_7047924305245012_8543791845622780989_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHp3lfIyEs5PwlFgE69d_GrNvxP6ygFrDg2_E_rKAWsOF_S52e5lg_dzSakGQHY-hq59pwhxpPfOOalI15nxpZz&_nc_ohc=XYPcuxCQeN4Ab4_mp0b&_nc_ht=scontent.fagu4-1.fna&oh=00_AfD6WA6rTwYXq7K8-6_io5JJiBVipX_7oaU1MEsmhh2Znw&oe=6613782A" alt="Diver photo">
+                </div>
+                <div class="helldiver-stadistics">
+                    <div>
+                        <h4>3520 Automatons</h4>
+                        <p>exterminated</p>
+                    </div>
+                    <div class="terminids">
+                        <h4>6200 Terminids</h4>
+                        <p>exterminated</p>
+                    </div>
+                </div>
+                <div class="add-helldiver">
+                    <button>Add Helldiver</button>
+                    <footer>GLORY FOR THE SUPER EARTH</footer>
+                </div>
+            </section>
+        </div>
+    </section>
+</body>
+</html>
